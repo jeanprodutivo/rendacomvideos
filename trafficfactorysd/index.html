@@ -8,6 +8,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-58FKNLT');</script>
 <!-- End Google Tag Manager -->
+<script type="text/javascript">
+	document.addEventListener("mouseleave", function(e){
+		// Redireciona o usuário na intenção de sair da página (Desktop)
+    	if( e.clientY < 0 )
+    		{
+         		window.location.href = 'https://api.whatsapp.com/send?phone=5571986598560&#038;text=%5BLK1%5D%20Ol%C3%A1%2C%20vim%20da%20p%C3%A1gina%20do%20M%C3%A9todo%20Renda%20com%20V%C3%ADdeos%20e%20preciso%20tirar%20d%C3%BAvidas.%20Poderia%20me%20ajudar%3F';
+    		}
+		}, false);
+
+		// Redireciona o usuário ao clicar no botão de voltar (Mobile)
+		var back_link = 'https://api.whatsapp.com/send?phone=5571986598560&#038;text=%5BLK1%5D%20Ol%C3%A1%2C%20vim%20da%20p%C3%A1gina%20do%20M%C3%A9todo%20Renda%20com%20V%C3%ADdeos%20e%20preciso%20tirar%20d%C3%BAvidas.%20Poderia%20me%20ajudar%3F';
+
+		history.pushState({},"",location.href);
+	    history.pushState({},"",location.href);
+
+	    window.onpopstate = function(){
+	        setTimeout(function () {
+	        	location.href = back_link;
+	        },1);
+	    };
+</script>
 	<meta charset="UTF-8">
 		<title>Renda com Vídeos [SEM DELAY] R$ 197,00 &#8211; Renda com Vídeos Oficial</title>
 <meta name='robots' content='max-image-preview:large' />
